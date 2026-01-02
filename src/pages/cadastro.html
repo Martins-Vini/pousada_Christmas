@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cadastro - Pousada Christmas</title>
+    <link rel="stylesheet" href="../styles/reset.css">
+    <link rel="stylesheet" href="../styles/cadastro.css">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Marck+Script&family=Tangerine:wght@400;700&display=swap"
+        rel="stylesheet">
+    <link rel="shortcut icon" href="../images/icons/favicon.png" type="image/x-icon">
+</head>
+
+<body>
+    <main>
+        <div id="container_login">
+            <aside id="contain_img">
+                <h1>Christmas</h1>
+                <p> A Pousada Christmas foi concebida para ser muito mais do que um meio de hospedagem; ela é um refúgio
+                    de imersão total na época mais mágica do ano.</p>
+                <p> Imagine um lugar onde o calendário parece ter parado na noite de 24 de dezembro, oferecendo paz,
+                    nostalgia e o calor das tradições familiares.</p>
+            </aside>
+            <aside id="contain_form">
+                <img id="logo" src="../images/icons/logo_pousada.png" alt="logo_pousada">
+                <h1>Olá, seja bem-vindo(a)!</h1>
+
+                <article>
+                    <div>
+                        <p><label for="campoNome">Nome/Apelido:</label></p>
+                        <input placeholder="Insira o nome do seu perfil" id="campoNome" type="text">
+                    </div>
+                    <div>
+                        <p><label for="campoEmail">Email:</label></p>
+                        <input placeholder="Insira seu email" id="campoEmail" type="email">
+                    </div>
+                    <div>
+                        <p><label for="campoSenha">Senha:</label></p>
+                        <input placeholder="Insira a senha do seu perfil" id="campoSenha" type="text">
+                    </div>
+                    <div>
+                        <p><label for="campoConfSenha">Confirmar senha:</label></p>
+                        <input placeholder="Repita a senha criada" id="campoConfSenha" type="text">
+                    </div>
+                </article>
+                <button id="cadastrar">Fazer Cadastro</button>
+                <a href="login.html"><button id="acessar">Fazer Login</button></a>
+                <abbr title="Opção em desenvolvimento">
+                    <div id="contato_container">
+                        <img src="../images/icons/google.png" alt="google">
+                        <img src="../images/icons/instagram.png" alt="instagram">
+                        <img src="../images/icons/facebook.png" alt="facebook">
+                    </div>
+                </abbr>
+            </aside>
+        </div>
+    </main>
+    <script type="module" src="../scripts/main.js"></script>
+    <script type="module" src="../scripts/cadastro.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,98 @@
+@charset "UTF-8";
+
+/*Uso e estudo de grid
+ 1-> Layouts 1D e 2D
+
+ Flexbox -> Layout unidimensional, pode alinhar itens verticalmente e horizontalmente
+ Grid -> Itens posicionados em células, como em tabelas, definindo linhas e colunas ao mesmo tempo
+
+*/
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    width: 100%;
+}
+
+a {
+    text-decoration: none;
+}
+
+hr {
+    color: black;
+    width: 100%;
+}
+
+main {
+    width: 100%;
+}
+
+#banner {
+    background-image: url("../images/fundos/image.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    background-position: center center;
+    box-shadow: 20px 20px 40px rgba(0, 0, 0, 0.301);
+    height: 150px;
+}
+
+main div#container_content {
+    display: grid;
+    /* 3 colunas: As das pontas vazias (1fr) e a central com o conteúdo (máximo 600px) */
+    grid-template-columns: 1fr minmax(300px, 600px) 1fr; 
+    width: 100%;
+    row-gap: 20px;
+}
+
+#container_content > * {
+    grid-column: 2;
+    width: 100%;
+}
+
+/*div#container_content aside,
+div#container_content article {
+    background-color: aquamarine;
+}*/
+
+div#container_content div#container_hr {
+    width: 100%;
+    text-align: center;
+}
+
+#banner img {
+    margin: 10px;
+    width: 45px;
+}
+
+#container_foto {
+    display: flex;
+    justify-content: center;
+    margin-top: -75px;
+    background-color: transparent
+}
+
+#container_foto img {
+    width: 300px;
+    height: 300px;
+    border-radius: 50%;
+    border: 5px solid white;
+    object-fit: cover;
+
+}
+
+div#container_content article ul {
+    text-align: start;
+    display: grid;
+    justify-content: center;
+    align-items: center;
+    grid-template-rows: auto auto auto;
+    list-style-type: none;
+}
+
+div#container_content article ul li {
+    margin-top: 10px;
+}
+
+div#container_content article ul li#nomePerfil {
+    font-size: 2.5em;
+}

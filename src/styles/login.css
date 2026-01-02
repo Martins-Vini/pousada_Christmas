@@ -1,0 +1,127 @@
+@charset "UTF-8";
+
+main {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: rgb(93, 14, 55);
+    background-image: url("../images/fundos/fundo.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center bottom;
+    height: 100vh;
+}
+
+#container_login {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: row;
+    width: 600px;
+    height: 550px;
+    background-color: white;
+    border-radius: 20px;
+    box-shadow: 10px 10px 20px rgba(0, 0, 0, 0.156);
+}
+
+#contain_img {
+    height: 100%;
+    width: 60%;
+    background-image: url("../images/conteudo/fundo_login.png");
+    background-repeat: repeat;
+    background-size: cover;
+    background-position: center center;
+    border-radius: 10px 0px 0px 10px;
+}
+
+#contain_img h1,
+#contain_img p {
+    color: #EEFF00;
+}
+
+#contain_img h1 {
+    text-align: center;
+    font-family: 'Tangerine';
+    font-size: 5em;
+    text-shadow: 4px 4px 8px rgba(0, 0, 0, 0.811);
+}
+
+#contain_img p {
+    text-align: justify;
+    margin-left: 10px;
+    font-family: 'Marck Script';
+    text-shadow: 4px 4px 8px rgba(0, 0, 0, 0.811);
+}
+
+#contain_form {
+    text-align: center;
+}
+
+#contain_form h1 {
+    color: #511D43;
+    font-size: 25px;
+}
+
+#logo {
+    width: 30%;
+}
+
+#contain_form article {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+#contain_form article div {
+    display: flex;
+    justify-content: center;
+    align-items: start;
+    flex-direction: column;
+}
+
+#contain_form article div input{
+    padding:3px;
+    border:1px solid gray;
+    border-radius: 10px;
+    height:25px;
+}
+
+#contain_form div p {
+    text-align: start;
+    color: black;
+}
+
+p#cadastrar a {
+    text-align: center;
+    color: rgb(32, 150, 32);
+    text-decoration: none;
+}
+
+p#cadastrar a:hover {
+    text-decoration: underline;
+}
+
+button#acessar {
+    background-color: rgb(233, 34, 34);
+    padding: 3px;
+    color: white;
+    margin-top: 20px;
+    border: 0px;
+    border-radius: 5px;
+    width: 100px;
+    height: 30px;
+    cursor: pointer;
+}
+
+div#contato_container img {
+    width: 50px;
+    margin-right: 10px;
+    cursor: pointer;
+    transition: 0.5s;
+}
+
+div#contato_container img:hover {
+    width: 52px;
+}
