@@ -138,9 +138,6 @@ div#contato_container img:hover {
 }
 
 @media screen and (max-width: 600px) {
-    body{
-        overflow-y: auto;
-    }
     
     main {
         height: auto;
@@ -156,6 +153,7 @@ div#contato_container img:hover {
         height: auto;
         margin-top: 40px; /* Espaço para o gorro/guirlanda não cortar */
         overflow: visible;
+        overflow-y: scroll;
     }
 
     #contain_img {
