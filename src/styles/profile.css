@@ -67,10 +67,33 @@ div#container_content div#container_hr {
 }
 
 #container_foto {
+    position: relative;
     display: flex;
     justify-content: center;
     margin-top: -75px;
     background-color: transparent
+}
+
+#arquivo{
+    display:none;
+}
+
+#btn_editar_foto {
+    position: absolute;
+    bottom: 15px;    
+    right: 15px;    
+    color: #333;
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    box-shadow: 0px 4px 10px rgba(0,0,0,0.2);
+    font-size: 1.2em;
+    transition: transform 0.2s, background-color 0.2s;
+    border: 2px solid #ddd;
 }
 
 #container_foto img {
